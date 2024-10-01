@@ -1,0 +1,103 @@
+@import "../../assets/variables.scss";
+
+.services {
+  padding-top: 150px;
+}
+
+.servicesContent {
+  text-align: center;
+}
+
+.servicesTitle {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.servicesSubTitle {
+  padding-top: 18px;
+
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+
+  color: $gray-dark;
+}
+
+@media (max-width: 767px) {
+  .servicesTitle {
+    font-size: 24px;
+  }
+
+  .servicesSubTitle {
+    font-size: 16px;
+  }
+}
+
+.servicesCards {
+  padding-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
+  grid-gap: 40px;
+}
+
+@media (max-width: 767px) {
+  .servicesCards {
+    padding-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 16px;
+  }
+}
+
+.servicesCard {
+  padding: 34px 30px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 24px;
+
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .servicesCardIcon {
+    svg {
+      width: 34px;
+      height: 34px;
+    }
+  }
+
+  .servicesCard {
+    padding: 30px 17px;
+  }
+}
+
+.servicesCardTitle {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: $primary-text;
+
+  padding-top: 16px;
+}
+
+.servicesCardSubTitle {
+  padding-top: 34px;
+
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  line-height: 160%;
+  color: $gray-dark;
+}
+
+@media (max-width: 767px) {
+  .servicesCardTitle {
+    font-size: 16px;
+    padding-top: 8px;
+  }
+
+  .servicesCardSubTitle {
+    font-size: 12px;
+    padding-top: 16px;
+  }
+}

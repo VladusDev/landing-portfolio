@@ -1,0 +1,135 @@
+@import "../../assets/variables.scss";
+
+.projects {
+  padding-top: 150px;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.top {
+  padding-top: 40px;
+}
+
+.content {
+  text-align: center;
+}
+
+.tags {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+
+  li {
+    display: inline-block;
+    padding: 14px 40px;
+    background: rgba(255, 255, 255, 0.1);
+
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.6em;
+    letter-spacing: 0.03em;
+
+    cursor: pointer;
+
+    &:hover {
+      background-image: $primary-btn;
+    }
+
+    &.active {
+      background: $primary-text;
+    }
+  }
+}
+
+.card {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.cardRow {
+  display: inline-block;
+}
+
+.works {
+  padding-top: 70px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 20px;
+}
+
+.cardDesc {
+  display: flex;
+  justify-content: space-between;
+
+  background: rgba(149, 149, 149, 0.1);
+  padding: 16px;
+
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  color: $gray-light;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.6em;
+  letter-spacing: 0.03em;
+}
+
+.btnGit {
+  display: flex;
+  justify-content: center;
+
+  padding-top: 40px;
+}
+
+@media (max-width: 767px) {
+  .works {
+    padding-top: 50px;
+
+    display: flex;
+    overflow-x: scroll;
+  }
+
+  .works::-webkit-scrollbar {
+    display: none;
+  }
+
+  .cardDesc {
+    gap: 91px;
+  }
+
+  .cardName {
+    font-size: 14px;
+    letter-spacing: 0.2em;
+  }
+
+  .tags {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    li {
+      display: inline-block;
+      padding: 10px 20px;
+
+      font-size: 14px;
+    }
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .projects {
+    padding-top: 100px;
+  }
+}

@@ -1,0 +1,177 @@
+@import "../../assets/variables.scss";
+
+.home {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .home {
+    display: block;
+    text-align: center;
+  }
+}
+
+.sectionLeft {
+  padding-top: 136px;
+}
+
+.homePresent {
+  h4 {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    color: $gray-dark;
+  }
+
+  h3 {
+    padding-top: 10px;
+
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: $gray;
+  }
+}
+
+@media (max-width: 767px) {
+  .homePresent {
+    h4 {
+      font-size: 16px;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+  }
+}
+
+.homeTitle {
+  padding-top: 24px;
+
+  font-size: 70px;
+  font-weight: 900;
+  letter-spacing: 0.03em;
+
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: $primary-title;
+}
+
+@media (max-width: 767px) {
+  .homeTitle {
+    font-size: 40px;
+  }
+}
+
+.homeSocials {
+  padding-top: 17px;
+
+  .socialRow {
+    display: flex;
+    gap: 20px;
+
+    li {
+      display: flex;
+      padding: 8px;
+      background: $bg-color;
+      border: 1px solid white;
+      border-radius: 50%;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        background-color: white;
+
+        svg {
+          width: 24px;
+          height: 24px;
+          path {
+            fill: orangered;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .homeSocials {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+  }
+}
+
+.homeBtns {
+  padding-top: 61px;
+
+  .homeBtnsRow {
+    display: flex;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .homeBtns {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.homeInfo {
+  margin-top: 80px;
+
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 8px;
+
+  display: flex;
+  gap: 30px;
+}
+
+.homeContent:not(:last-child) {
+  padding-right: 30px;
+  border-right: 1px solid #fff;
+}
+
+.homeInfoTitle {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+
+  color: #fd7f00;
+}
+
+.homeInfoSubTitle {
+  padding-top: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.homeImg {
+  padding-top: 30px;
+}
+
+@media (max-width: 767px) {
+  .homeInfoTitle {
+    font-size: 20px;
+  }
+
+  .homeInfoSubTitle {
+    font-size: 10px;
+    padding-top: 5px;
+  }
+
+  .homeInfo {
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .homeContent:not(:last-child) {
+    padding-right: 37px;
+    border-right: 1px solid #fff;
+  }
+}

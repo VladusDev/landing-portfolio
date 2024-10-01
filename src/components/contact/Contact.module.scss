@@ -1,0 +1,178 @@
+@import "../../assets/variables.scss";
+
+.contact {
+  padding: 150px 0;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.subTitle {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6em;
+  letter-spacing: 0.03em;
+
+  padding-top: 18px;
+
+  color: $gray-dark;
+}
+
+@media (max-width: 767px) {
+  .contact {
+    padding: 100px 0;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .subTitle {
+    font-size: 16px;
+  }
+}
+
+.content {
+  text-align: center;
+}
+
+.contactForm {
+  padding-top: 50px;
+}
+
+/* INPUTS */
+
+input {
+  background-image: $primary-input;
+
+  border-radius: 8px;
+  padding: 14px 0 14px 24px;
+  width: 491px;
+
+  &:focus {
+    border: 1px solid white;
+  }
+}
+
+input[placeholder] {
+  font-size: 16px;
+  font-weight: 500;
+  color: $gray;
+  letter-spacing: 0.03em;
+  line-height: 1.6em;
+}
+
+.inputRow {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.inputLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.inputRight {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.select {
+  background-image: $primary-input;
+  border-radius: 8px;
+}
+
+select {
+  font-size: 16px;
+  font-weight: 500;
+  color: $gray;
+  letter-spacing: 0.03em;
+  line-height: 1.6em;
+
+  padding: 14px 0 14px 24px;
+  width: 491px;
+
+  outline: none;
+
+  appearance: none;
+  background: url("../../assets/images/about/icons/arrow-down.svg") no-repeat
+    right;
+  background-position-x: calc(100% - 10px);
+  background-position-y: calc(100% - 20px);
+
+  cursor: pointer;
+
+  &:focus {
+    border: 1px solid white;
+  }
+}
+
+option {
+  background-image: $primary-input;
+  background: $gray;
+}
+
+textarea {
+  resize: none;
+  background-image: $primary-input;
+  border-radius: 8px;
+
+  width: 491px;
+  height: 162px;
+
+  outline: none;
+
+  padding: 14px 0 0 24px;
+
+  &.textarea {
+    color: $gray;
+  }
+
+  &:focus {
+    border: 1px solid white;
+  }
+}
+
+.btnSend {
+  display: flex;
+  justify-content: right;
+}
+
+@media (max-width: 767px) {
+  .inputRow {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .inputLeft {
+    gap: 16px;
+  }
+
+  .inputRight {
+    gap: 16px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .textarea {
+    width: 100%;
+  }
+
+  select {
+    width: 100%;
+  }
+
+  .btnSend {
+    display: flex;
+    justify-content: center;
+  }
+}

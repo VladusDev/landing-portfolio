@@ -1,0 +1,136 @@
+@import "../../assets/variables.scss";
+
+.about {
+  padding-top: 150px;
+}
+
+.aboutRow {
+  padding-top: 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .about {
+    padding-top: 100px;
+  }
+
+  .aboutRow {
+    display: block;
+    text-align: center;
+  }
+}
+
+.aboutContent {
+  text-align: center;
+}
+
+.aboutTitle {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.aboutSubTitle {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+
+  color: $gray-dark;
+
+  padding-top: 18px;
+}
+
+.aboutDesc {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.9em;
+
+  color: $gray-dark;
+
+  width: 631px;
+}
+
+.aboutBtn {
+  padding-top: 40px;
+}
+
+.aboutIcon {
+  display: flex;
+  gap: 12px;
+}
+
+.aboutImg {
+  padding-top: 40px;
+}
+
+.aboutSkillItem {
+  position: relative;
+  display: flex;
+}
+
+.aboutSkillIcon {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.aboutSkillsRow {
+  display: flex;
+  gap: 69px;
+  padding-top: 100px;
+}
+
+.aboutSkillPercentage {
+  font-size: 30px;
+  font-weight: 700;
+  color: $primary-text;
+}
+
+.aboutSkillName {
+  padding-top: 8px;
+
+  font-size: 24px;
+  font-weight: 700;
+  color: $gray-dark;
+}
+
+.aboutSkillDesc {
+  text-align: center;
+}
+
+@media (max-width: 1450px) {
+  .aboutSkillsRow {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .aboutTitle {
+    font-size: 24px;
+  }
+
+  .aboutSubTitle {
+    font-size: 16px;
+  }
+
+  .aboutDesc {
+    display: inline;
+    font-size: 16px;
+    width: 382px;
+  }
+
+  .aboutImg {
+    padding-top: 70px;
+    padding-bottom: 34px;
+  }
+
+  .aboutBtn {
+    padding-top: 24px;
+  }
+}

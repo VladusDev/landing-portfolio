@@ -1,0 +1,35 @@
+@import "./assets/variables.scss";
+@import "./assets/reset.scss";
+
+@import url(https://fonts.googleapis.com/css?family=Lato:regular,500,700,900);
+@import url(https://fonts.googleapis.com/css?family=K2D:700);
+
+body {
+  background-color: $bg-color;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+
+  color: #fff;
+}
+
+a {
+  color: #fff;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 428px;
+    margin: 0 auto;
+    padding: 0 23px;
+  }
+}
